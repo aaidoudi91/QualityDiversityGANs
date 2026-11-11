@@ -1,0 +1,15 @@
+{
+  "name": "vae_init_s0",
+  "epochs": 100,
+  "lr": 0.0002,
+  "beta1": 0.9,
+  "beta2": 0.999,
+  "batch_size": 64,
+  "seed": 0,
+  "init_g": "checkpoints/vae/G_init.pth",
+  "eval_every": 10,
+  "eval_n": 10000,
+  "eval_mode": "png_clamp",
+  "n_real": 20000,
+  "data_root": "data"
+}

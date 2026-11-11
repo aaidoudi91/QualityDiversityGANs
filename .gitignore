@@ -1,0 +1,12 @@
+.DS_Store
+.idea/
+Icon?
+runs/
+eval_cache/
+data/
+__pycache__/
+checkpoints/vae/
+samples/
+*.log
+figures/
+tables/

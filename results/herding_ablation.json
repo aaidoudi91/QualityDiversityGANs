@@ -1,0 +1,210 @@
+{
+  "config": {
+    "checkpoint": "checkpoints/G.pth",
+    "data_root": "data",
+    "n_candidates": 20000,
+    "n_samples": 10000,
+    "n_reference": 10000,
+    "subset": 1000,
+    "random_seeds": 5,
+    "skip_full": false,
+    "output": "results/herding_ablation.json",
+    "sigma": 14.526811599731445
+  },
+  "runs": {
+    "random_s0": {
+      "fid": 23.85,
+      "precision": 0.546,
+      "recall": 0.366,
+      "class_entropy": 0.906,
+      "class_freq": [
+        0.1099,
+        0.2522,
+        0.0126,
+        0.0625,
+        0.0759,
+        0.0398,
+        0.1026,
+        0.1661,
+        0.0486,
+        0.1298
+      ],
+      "n_unique": 10000
+    },
+    "random_s1": {
+      "fid": 24.06,
+      "precision": 0.547,
+      "recall": 0.361,
+      "class_entropy": 0.905,
+      "class_freq": [
+        0.1084,
+        0.2589,
+        0.0147,
+        0.0643,
+        0.0744,
+        0.0389,
+        0.1008,
+        0.1622,
+        0.0454,
+        0.132
+      ],
+      "n_unique": 10000
+    },
+    "random_s2": {
+      "fid": 24.08,
+      "precision": 0.549,
+      "recall": 0.38,
+      "class_entropy": 0.903,
+      "class_freq": [
+        0.1049,
+        0.2605,
+        0.0146,
+        0.0678,
+        0.0734,
+        0.0394,
+        0.1017,
+        0.1632,
+        0.0427,
+        0.1318
+      ],
+      "n_unique": 10000
+    },
+    "random_s3": {
+      "fid": 24.14,
+      "precision": 0.552,
+      "recall": 0.372,
+      "class_entropy": 0.904,
+      "class_freq": [
+        0.1111,
+        0.2615,
+        0.0144,
+        0.0633,
+        0.0726,
+        0.0414,
+        0.0979,
+        0.1615,
+        0.0445,
+        0.1318
+      ],
+      "n_unique": 10000
+    },
+    "random_s4": {
+      "fid": 24.96,
+      "precision": 0.551,
+      "recall": 0.367,
+      "class_entropy": 0.898,
+      "class_freq": [
+        0.1058,
+        0.271,
+        0.0134,
+        0.0629,
+        0.0735,
+        0.0398,
+        0.0979,
+        0.1665,
+        0.0447,
+        0.1245
+      ],
+      "n_unique": 10000
+    },
+    "attraction_only": {
+      "fid": 17.71,
+      "precision": 0.646,
+      "recall": 0.257,
+      "class_entropy": 0.935,
+      "class_freq": [
+        0.099,
+        0.1095,
+        0.0114,
+        0.0978,
+        0.0856,
+        0.0581,
+        0.148,
+        0.1073,
+        0.0622,
+        0.2211
+      ],
+      "n_unique": 10000
+    },
+    "herding_stoch": {
+      "fid": 12.25,
+      "precision": 0.612,
+      "recall": 0.372,
+      "class_entropy": 0.949,
+      "class_freq": [
+        0.1774,
+        0.149,
+        0.0188,
+        0.1097,
+        0.0834,
+        0.0708,
+        0.0912,
+        0.1111,
+        0.0476,
+        0.141
+      ],
+      "n_unique": 10000
+    },
+    "herding": {
+      "fid": 12.26,
+      "precision": 0.613,
+      "recall": 0.372,
+      "class_entropy": 0.949,
+      "class_freq": [
+        0.1775,
+        0.149,
+        0.0188,
+        0.1096,
+        0.0834,
+        0.0708,
+        0.0912,
+        0.111,
+        0.0476,
+        0.1411
+      ],
+      "n_unique": 10000
+    },
+    "submitted": {
+      "fid": 12.41,
+      "precision": 0.612,
+      "recall": 0.375,
+      "class_entropy": 0.947,
+      "class_freq": [
+        0.1801,
+        0.1563,
+        0.0184,
+        0.1105,
+        0.0787,
+        0.0711,
+        0.0901,
+        0.1104,
+        0.0463,
+        0.1381
+      ],
+      "n_unique": 10000
+    }
+  },
+  "time_s": {
+    "attraction_only": 7.7,
+    "herding_stoch": 183.2,
+    "herding": 166.9
+  },
+  "random_mean_std": {
+    "fid": [
+      24.218,
+      0.384
+    ],
+    "precision": [
+      0.549,
+      0.002
+    ],
+    "recall": [
+      0.369,
+      0.006
+    ],
+    "class_entropy": [
+      0.903,
+      0.003
+    ]
+  }
+}

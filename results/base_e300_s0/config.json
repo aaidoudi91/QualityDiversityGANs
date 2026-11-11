@@ -1,0 +1,22 @@
+{
+  "name": "base_e300_s0",
+  "epochs": 300,
+  "lr": 0.0002,
+  "lr_g": null,
+  "lr_d": null,
+  "beta1": 0.9,
+  "beta2": 0.999,
+  "batch_size": 64,
+  "seed": 0,
+  "init_g": null,
+  "d_dropout": 0.0,
+  "eval_every": 50,
+  "eval_n": 10000,
+  "eval_mode": "png_clamp",
+  "n_real": 20000,
+  "no_eval_ep0": false,
+  "no_eval": false,
+  "log_steps": 0,
+  "log_until": 2814,
+  "data_root": "data"
+}

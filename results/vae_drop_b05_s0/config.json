@@ -1,0 +1,22 @@
+{
+  "name": "vae_drop_b05_s0",
+  "epochs": 100,
+  "lr": 0.0002,
+  "lr_g": null,
+  "lr_d": null,
+  "beta1": 0.5,
+  "beta2": 0.999,
+  "batch_size": 64,
+  "seed": 0,
+  "init_g": "checkpoints/vae/G_init.pth",
+  "d_dropout": 0.25,
+  "eval_every": 10,
+  "eval_n": 10000,
+  "eval_mode": "png_clamp",
+  "n_real": 20000,
+  "no_eval_ep0": false,
+  "no_eval": false,
+  "log_steps": 50,
+  "log_until": 2814,
+  "data_root": "data"
+}

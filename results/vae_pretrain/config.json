@@ -1,0 +1,13 @@
+{
+  "steps": 50000,
+  "batch_size": 64,
+  "lr": 0.0002,
+  "beta1": 0.5,
+  "beta2": 0.999,
+  "kl_weight": 1.0,
+  "init": "normal002",
+  "seed": 0,
+  "log_every": 1000,
+  "sample_every": 10000,
+  "out_dir": "checkpoints/vae"
+}
