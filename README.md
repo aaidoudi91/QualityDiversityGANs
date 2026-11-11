@@ -1,7 +1,5 @@
 # VAE Pre-training and Kernel Herding on MNIST
 
-Data Science Lab — Project A2, Master IASD, Group 24.
-
 Léo Gruchociak · Mahmoud Ait-selam · Aaron Aidoudi
 
 We study generation quality and diversity while keeping the supplied
