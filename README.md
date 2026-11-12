@@ -24,15 +24,12 @@ Selected local results reported in the report, using 10,000 generated images:
 
 ## Repository guide
 
-- `model.py`: supplied generator and discriminator architectures.
-- `vae.py`, `train_vae.py`: VAE and decoder pre-training.
-- `train_gan.py`: GAN training, optional VAE initialisation and D regularisation.
-- `evaluation.py`, `evaluate_samples_folder.py`: local FID, precision/recall and class diagnostics.
-- `herding_ablation.py`: random, attraction-only and herding comparisons.
-- `kernel_herding*.py`, `kh_overnight.py`: exploratory selection scripts.
+- `gan/`: `model.py` (supplied generator/discriminator), `train_gan.py` (training, optional VAE initialisation and D regularisation), `evaluation.py`, `evaluate_samples_folder.py` (local FID, precision/recall, class diagnostics), `generate.py` (generation entry point).
+- `vae/`: `vae.py`, `train_vae.py` (VAE and decoder pre-training), `analysis.py` (figures and tables), `check_hypotheses.py` (mechanism checks).
+- `herding/`: `kernel_herding.py`, `herding_ablation.py` (random, attraction-only and herding comparisons).
 - `results/`: saved configurations, training histories, sample grids and herding ablation results.
-- `generate.py`, `checkpoints/`: generation entry point, GAN weights and saved herding indices.
-- `train.py`, `utils.py`, `scripts/`: starter training utilities and Slurm scripts.
+- `checkpoints/`: GAN weights and saved herding indices.
+
 
 ## Generate the submitted samples
 
@@ -40,7 +37,7 @@ Run from the repository root:
 
 ```bash
 python -m pip install -r requirements.txt
-python generate.py
+python -m gan.generate
 ```
 
 This produces 10,000 grayscale PNGs in `samples/`, replacing existing PNGs. It loads `checkpoints/G.pth` and replays the saved GAN-only herding selection from `checkpoints/kh_selected_ids.npy` on CPU.
