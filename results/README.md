@@ -1,6 +1,6 @@
 # Results
 
-Machine: M1 Pro (MPS), seed 0, 10,000 images generated per evaluation.
+Seed 0, 10,000 images generated per evaluation.
 
 Local evaluation: `../gan/evaluation.py` (FID + k-NN precision/recall, k=3, Inception pool3 features,
 20,000 real reference images, `png_clamp` conversion identical to generate.py).
